@@ -1,0 +1,1 @@
+console.log("we're all going to get rich off this project")
