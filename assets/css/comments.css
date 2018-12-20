@@ -1,0 +1,82 @@
+#chat {
+    height: 50%;
+    overflow: auto;
+}
+
+.header {
+    padding-top: 10px;
+}
+input[type="text"], textarea {
+    margin: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 7px;
+    box-shadow: inset 0px 1px 1px #ddd;
+  }
+  .comment-box {
+    width: 75%;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 390px;
+    overflow: auto;
+  }
+  .comment-area {
+    margin-bottom: 20px;
+    
+  }
+  
+  .header {
+    margin: 20px 20px 0 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  form {
+    margin: 10px 10px 30px 10px;
+  }
+  form ::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  button {
+    font-weight: 400;
+    margin: 12px 0 0 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    background: #D3775D;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.1s;
+  }
+  button:hover {
+    background: #C15334;
+  }
+  
+  span {
+    margin: 0 0 5px 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  h4 {
+    margin: 0 0 5px 20px;
+  }
+  
+  p, span {
+    margin: 0 20px 10px 20px;
+    color: #333;
+  }
+  
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
