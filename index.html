@@ -32,7 +32,7 @@ body {
   padding: 20px;
 }
 
-#bigCtn {
+.button {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -42,37 +42,7 @@ body {
   cursor: pointer;
 }
 
-#parkCity {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#littleCtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#parkCity:hover {
-  background: #ddd;
-  color: black;
-}
-
-#littleCtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-#bigCtn:hover {
+.button:hover {
   background: #ddd;
   color: black;
 }
@@ -88,33 +58,11 @@ body {
   <div class="content">
     <h1>Wasatch Weatherman</h1>
     <p>A personalized weather report for every skiier. </p>
-    <button id="parkCity">Park City</button>
-    <button id="littleCtn"><a href="./lcc.html"></a>Little Cottonwood</button>
-    <button id="bigCtn">Big Cottonwood</button>
+    <a href="./lcc.html" class="button">Little Cottonwood</a>
+    <!-- <a href="./bcc.html" class="button">Big Cottonwood</a>
+    <a href="./pc.html" class="button">Park City</a> -->
+
   </div>
-
-  <!-- <div id="button"><a href="login.html">Log In</a></div> -->
-
-  <!-- <button id="parkCity" onclick="myFunction()">Pause</button>
-  <button id="littleCtn" onclick="myFunction()">Pause</button>
-  <button id="bigCtn" onclick="myFunction()">Pause</button> -->
-  
-  <!-- <input type="button" onclick="location.href='http://google.com';" -->
-<!-- 
-  <script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
-
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-  </script> -->
 
 </body>
 
