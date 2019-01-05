@@ -1,5 +1,4 @@
 #map {
-<<<<<<< HEAD
     height: 375px;
     width: 80%;
   }
@@ -82,31 +81,3 @@ nav {
 
 
 
-=======
-  height: 300px;
-  width: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-/* html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-element.style {
-  position: relative;
-  overflow: visible;
-}
-.container {
-  background-color: rgb(20, 20, 50, .8);
-
-}
-body {
-  background-color: lightslategray;
-}
-h5 {
-  font-size: 16px;
-}
-nav {
-  background-color: rgb(20, 20, 50, .8);
-}
->>>>>>> 13ceda0b6b28cf7d9d2422bcf7dca60fda018bd0
