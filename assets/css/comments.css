@@ -1,10 +1,11 @@
 #chat {
     height: 50%;
     overflow: auto;
+    max-height: 400px;
 }
 
 .header {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 input[type="text"], textarea {
     margin: 5px 10px;
@@ -65,12 +66,13 @@ input[type="text"], textarea {
     font-weight: 600;
   }
   h4 {
+    color: lightgray;
     margin: 0 0 5px 20px;
   }
   
   p, span {
     margin: 0 20px 10px 20px;
-    color: #333;
+    color: whitesmoke;
   }
   
   hr {
