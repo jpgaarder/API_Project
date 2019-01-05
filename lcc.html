@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Little Cottonwood</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/mapstyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/comments.css">
+
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                        <div class="navbar-header">
+                          <h1><a href="lcc.html">LITTLE COTTONWOOD CANYON</a></h1>
+                        </div>
+                        <div class="navbar-header">
+                             <h3><a href="index.html">Wasatch Wx Stations</a></h3>
+                            </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="bcc.html">BCC</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+    <div class="container">
+           
+        <div class="row" id="map">
+
+        </div>
+        <div class="row" id="buttons">
+                <button type="button" class="btn btn-dark show-all">Show All Stations</button>
+                <button type="button" class="btn btn-dark show-snow">Show Snow Depth Only</button>
+                <button type="button" class="btn btn-dark show-wind">Show Temp and Wind Stations Only</button>
+                <button type="button" class="btn btn-dark show-low">Low-EL</button>
+                <button type="button" class="btn btn-dark show-mid">Mid-EL</button>
+                <button type="button" class="btn btn-dark show-high">High-EL</button>
+                <button type="button" class="btn btn-dark show-highest">Highest-EL</button>
+            </div>
+        <div class="row" id="stations">
+        </div>
+        <div class="row" id="cards">
+            <div class="card resortcam" style="width: 26rem;">
+                <h5 class="card-title resort-text">Superior</h5>
+                <img class="card-img-top resortcam" id="resortcam" src="https://media.alta.com/resources/mtncam/Superior.jpg"
+                    alt="Card image cap">
+            </div>
+
+            <div class="card roadcam" style="width: 26rem;">
+                <h5 class="card-title">UDOT LCC</h5>
+                <img class="card-img-top webcams" id="webcams" src="http://udottraffic.utah.gov/1_devices/aux16265.jpeg"
+                    alt="Card image cap">
+            </div>
+
+            <div class="card links" id="resort-snow" style="width: 15rem;">
+                <h4>Wx and Area Links</h4>
+                <h5><a href="https://tropicaltidbits.com/analysis/models/">GFS Weather Model</a></h5>
+                <h5><a href="https://www.weather.gov/slc/snow">NOAA Wasatch Snow Page</a></h5>
+                <h5><a href="https://utahavalanchecenter.org/">Utah Avalanche Center</a></h5>
+                <h5><a href="https://powderbird.com/operations-report/">PowderBirds Operations</a></h5>
+                <h5><a href="https://www.alta.com/conditions/daily-mountain-report/snow-report">Alta Snow Report</a></h5>
+                <h5><a href="https://www.snowbird.com/mountain-report">SnowBird Mountain Report</a></h5>
+                <h5><a href="https://forecast.weather.gov/MapClick.php?lon=-111.63455205224454&lat=40.587050987601316#.XC_N0VxKhPY">NOAA Alta 7-day @ 9,500 ft.</a></h5>
+                <h5><a href="https://opensnow.com/dailysnow/utah">OpenSnow Wx Blog</a></h5>
+            </div>
+        </div>
+        <div class="row" id="chat">
+
+                <div class="comment-area">
+                        <p class="header" style="color: whitesmoke"> Was this info helpful?</p>
+                        <form action="#" onsubmit="event.preventDefault(); postComment()">
+                          <div> 
+                            <input type="text" id="name" placeholder="Name"/>
+                          </div>
+                          <div>
+                            <textarea id="comment" rows="3" cols="40" placeholder="Comment"></textarea>
+                          </div>
+                          <button type="submit">COMMENT</button>
+                        </form>  
+                      </div>
+                      <!-- <span>Comments</span> -->
+                      <div id="comments"></div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkQ5opRCGyG7jH62BQBCnbcN3ZVNgc6r8
+                    &callback=initMap"
+        async defer></script>
+
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+    <script src="assets/javascript/map.js"></script>
+    <script src="assets/javascript/cards.js"></script>
+    <script src="assets/javascript/weather.js"></script>
+    <script src="assets/javascript/comments.js"></script>
+
+
+
+
+</body>
+
+</html>

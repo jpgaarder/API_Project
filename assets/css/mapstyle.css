@@ -1,21 +1,83 @@
 #map {
-  height: 30%;
-  width: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-/* html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-element.style {
-  position: relative;
-  overflow: visible;
+    height: 375px;
+    width: 80%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  /* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+  element.style {
+    position: relative;
+    overflow: visible;
+   
 }
 .container {
-  background-color: whitesmoke;
-  max-width: 1413px;
+    background-color: rgb(20, 20, 50, .8);
+  
 }
 body {
-  background-color: black
+    background-color: lightslategray;
 }
+h5 {
+    font-size: 16px;
+}
+nav {
+    background-color: rgb(20, 20, 50, .8);
+}
+#powder-bird
+{
+    width:1000px;       /* set this to approximate width of entire page you're embedding */
+    height:2000px;      /* determines where the bottom of the page cuts off */
+    margin-left:-360px; /* clipping left side of page */
+    margin-top:-1000px;  /* clipping top of page */
+    overflow:hidden;
+
+    /* resize seems to inherit in at least Firefox */
+    -webkit-resize:none;
+    -moz-resize:none;
+    resize:none;
+}
+#powderturds
+{
+    width:840px;
+    height:317px;
+    overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
+    overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
+
+    /* resize and min-height are optional, allows user to resize viewable area */
+    -webkit-resize:vertical; 
+    -moz-resize:vertical;
+    resize:vertical;
+    min-height:317px;
+}
+
+.lowElevation {
+    background-color: blue;
+}
+.midElevation {
+    background-color: rgb(85, 85, 250); 
+}
+.highElevation {
+    background-color: rgb(155, 155, 248); 
+}
+.highestElevation {
+    background-color: rgb(214, 214, 247); 
+}
+.snow {
+    border: 10px greenyellow;
+}
+.links {
+    background-color: #EE82EE;
+   
+}
+.resortcam {
+    background-color: #EE82EE;
+}
+.roadcam {
+    background-color: #EE82EE;
+}
+
+
+
