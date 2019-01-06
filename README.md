@@ -13,6 +13,6 @@ Click here for your [Wasatch Wx Stations](https://jpgaarder.github.io/API_Projec
 
 ## CREDITS
 
- - [Scott Olafsen](https://github.com/scotolafsen) for API's, Map Master, layout, and functionality.
- - [Daniel Morgan](https://github.com/danielut4) for API's, Git, Firebase Comments, backend design and team coding.
+ - [Scott Olafsen](https://github.com/scotolafsen) for API's, layout, and functionality. 
+ - [Daniel Morgan](https://github.com/danielut4) for API's, back end design, and team coding wizard.
  - [Jason Gaarder](https://github.com/jpgaarder) for front end design, video embedding, and team coding.
